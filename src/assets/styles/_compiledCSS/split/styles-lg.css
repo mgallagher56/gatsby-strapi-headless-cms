@@ -1,0 +1,42 @@
+
+
+@media (min-width: 992px){
+  .container-lg, .container {
+    max-width: 960px;
+  }
+  .col-lg {
+    flex: 1 0;
+  }
+
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  h1, .h1 {
+    font-size: 60px;
+  }
+
+  h2, .h2 {
+    font-size: 50px;
+  }
+
+  h3, .h3 {
+    font-size: 40px;
+  }
+
+  h4, .h4 {
+    font-size: 30px;
+  }
+
+  h5, .h5 {
+    font-size: 22px;
+  }
+
+  h6, .h6 {
+    font-size: 16px;
+  }
+  .hero-module .hero-media,
+.hero-module .hero-content {
+    height: 100vh;
+  }
+}

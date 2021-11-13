@@ -1,0 +1,62 @@
+{
+    "black" : {
+        "name" : "Black",
+        "type" : "tertiary"
+    },
+    "blue-portfolio" : {
+        "name" : "Portfolio Blue",
+        "type" : "primary"
+    },
+    "blue-portfolio-dark" : {
+        "name" : "Portfolio Blue Dark",
+        "type" : "secondary"
+    },
+    "blue-portfolio-light" : {
+        "name" : "Portfolio Blue Light",
+        "type" : "secondary"
+    },
+    "black-portfolio" : {
+        "name" : "Portfolio Black",
+        "type" : "primary"
+    },
+    "black-portfolio-dark" : {
+        "name" : "Portfolio Dark Black",
+        "type" : "secondary"
+    },
+    "black-portfolio-light" : {
+        "name" : "Portfolio Light Black",
+        "type" : "secondary"
+    },
+    "mint-portfolio" : {
+        "name" : "Portfolio Mint",
+        "type" : "primary"
+    },
+    "mint-portfolio-dark" : {
+        "name" : "Portfolio Mint Dark",
+        "type" : "secondary"
+    },
+    "mint-portfolio-light" : {
+        "name" : "Portfolio Mint Light",
+        "type" : "secondary"
+    },
+    "pink-portfolio" : {
+        "name" : "Portfolio Pink",
+        "type" : "primary"
+    },
+    "pink-portfolio-dark" : {
+        "name" : "Portfolio Pink Dark",
+        "type" : "secondary"
+    },
+    "pink-portfolio-light" : {
+        "name" : "Portfolio Pink Light",
+        "type" : "secondary"
+    },
+    "white" : {
+        "name" : "White",
+        "type" : "tertiary"
+    },
+    "white-portfolio" : {
+        "name" : "Portfolio White",
+        "type" : "primary"
+    }
+}

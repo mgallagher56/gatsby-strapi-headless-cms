@@ -1,0 +1,14 @@
+.btn {
+    background: map-get($colors, mint-portfolio-dark);
+    padding: map-get($spacers, 2) map-get($spacers, 3);
+
+    &.btn-small {
+        padding: map-get($spacers, 1) map-get($spacers, 2);
+    }
+
+    &.btn-circle {
+        border-radius: 50%;
+        padding: map-get($spacers, 3);
+    }
+}
+

@@ -1,0 +1,134 @@
+
+
+@media (min-width: 768px){
+   .container {
+    max-width: 720px;
+  }
+
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-md-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-md-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+
+  .offset-md-0 {
+    margin-left: 0;
+  }
+
+  .offset-md-1 {
+    margin-left: 8.33333333%;
+  }
+
+  .offset-md-4 {
+    margin-left: 33.33333333%;
+  }
+
+  .d-md-flex {
+    display: flex !important;
+  }
+
+  .d-md-none {
+    display: none !important;
+  }
+
+  .flex-md-row {
+    flex-direction: row !important;
+  }
+
+  .my-md-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+
+  .mt-md-5 {
+    margin-top: 3rem !important;
+  }
+
+  .mb-md-0 {
+    margin-bottom: 0 !important;
+  }
+  .nav-mobile,
+.navbar-mobile {
+    display: none;
+    appearance: none;
+  }
+  header {
+    margin-bottom: 100px;
+  }
+
+  .nav-desktop {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar-nav {
+    height: 100px;
+    align-items: center;
+  }
+  .navbar-nav:before {
+    content: "";
+    background: #2B2D42;
+    height: 100px;
+    width: 200vw;
+    left: -50vw;
+    position: absolute;
+    z-index: -1;
+  }
+  .navbar-nav .navbar-desktop {
+    display: none;
+    appearance: none;
+  }
+  .navbar-nav img {
+    display: block;
+  }
+  .navbar-nav li {
+    padding: 20px 0;
+  }
+  .navbar-nav a {
+    color: white;
+    position: relative;
+    padding: 16px 24px;
+    text-decoration: none;
+  }
+  .navbar-nav a.nav-animation:after {
+    content: "";
+    opacity: 0;
+    display: block;
+    transition: height 1s ease-in-out, width 1s ease-in-out;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 10px;
+  }
+  .navbar-nav a.nav-animation:hover {
+    text-decoration: none;
+  }
+  .navbar-nav a.nav-animation:hover:after {
+    animation: fill 0.4s forwards;
+    opacity: 1;
+    background: #E0007B;
+    z-index: -1;
+  }
+}

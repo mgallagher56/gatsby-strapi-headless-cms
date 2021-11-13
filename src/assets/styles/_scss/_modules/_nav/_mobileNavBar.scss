@@ -1,0 +1,171 @@
+.nav-mobile {
+    height: 100vh;
+
+    .collapsible-nav {
+        background: map-get( $colors, pink-portfolio-dark );
+        border-radius: 50%;
+        border: 3px solid map-get( $colors, white );
+        bottom: 2vh;
+        height: 60px;
+        cursor: pointer;
+        padding: 0;
+        position: fixed;
+        transition: transform .3s, box-shadow .3s ease-in-out;
+        width: 60px;
+        z-index: 100;
+
+        &:hover {
+            box-shadow: 4px -4px 8px rgba(#fff, .3 ), -4px 4px 8px rgba(#fff, .3 );
+            transform: scaleX( 1.1 ) scaleY( 1.1 ) translateY( -3px );
+        }
+
+        &:before {
+            background: map-get( $colors, blue-portfolio-light );
+            content: '';
+            height: 100%;
+            border-radius: 50%;
+            opacity: 0;
+            position: absolute;
+            transition: all 1s ease-in-out;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+
+    .bubble {
+        display: none;
+        height: 50px;
+        width: 50px;
+    }
+
+    .navbar-mobile {
+        display: none;
+        transition: all 1s ease-in-out;
+        z-index: 95;
+        opacity: 0;
+        position: fixed;
+
+        &:before {
+            content: '';
+            height: 100%;
+            width: 100%;
+            background: map-get( $colors, black );
+            opacity: 0;
+            position: absolute;
+            transition: all 1s ease-in-out;
+        }
+
+        li {
+            width: 50%;
+            display: flex;
+
+            a {
+                color: map-get($colors, white-portfolio);
+                z-index: 100;
+
+                &:before {
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    content: '';
+                    display: block;
+                    height: 50px;
+                    left: 50%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY( -50% ) translateX( -50% );
+                    width: 50px;
+                }
+
+                p {
+                    position: relative;
+                    top: calc( 50% + 30px );
+                    left: 50%;
+                    transform: translateX( -50% );
+                    width: max-content;
+                }
+            }
+
+            &.home {
+                a {
+                    &:before {
+                        background-image: url("./images/001-property.svg");
+                    }
+                }
+            }
+
+            &.projects {
+                a {
+
+                    &:before {
+                        background-image: url("./images/003-folder.svg");
+                    }
+                }
+            }
+
+            &.technologies {
+                a {
+                    &:before {
+                        background-image: url("./images/002-electronics.svg");
+                    }
+                }
+            }
+
+            &.blog {
+                a {
+                    &:before {
+                        background-image: url("./images/008-blog.svg");
+                    }
+                }
+            }
+
+            &.contact {
+                a {
+                    &:before {
+                        background-image: url("./images/005-information.svg");
+                    }
+                }
+            }
+
+            &.baseplate {
+                a {
+                    &:before {
+                        background-image: url("./images/007-equalizer.svg");
+                    }
+                }
+            }
+        }
+    }
+
+    &.open {
+        .collapsible-nav {
+            &:before {
+                opacity: 1;
+            }
+        }
+
+        .navbar-mobile {
+            display: flex;
+            opacity: 1;
+
+            &:before {
+                opacity: .4;
+            }
+
+            .bubble {
+                display: block;
+                filter: blur(3px);
+                left: -100vw;
+                position: absolute;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+
+    .nav-mobile,
+    .navbar-mobile {
+        display: none;
+        appearance: none;
+    }
+}

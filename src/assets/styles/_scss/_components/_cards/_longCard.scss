@@ -1,0 +1,18 @@
+.long-card {
+    a {
+        color: map-get($colors, black-portfolio);
+        text-decoration: none;
+    }
+
+    max-height: 250px;
+    overflow: hidden;
+
+    .card-media {
+        left: 0;
+    }
+
+    img {
+        width: inherit;
+        object-fit: cover;
+    }
+}

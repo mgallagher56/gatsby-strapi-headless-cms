@@ -1,0 +1,15 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+@import '_variables/variables';
+@import '_components/_typography/typography';
+@import '_modules/module';
+@import '_components/_cards/card';
+@import '_components/_linksAndButtons/linksButtons';
+@import '_components/_forms/forms';
+@import '_animations/animations';
+@import 'baseplate';
+
+
+body {
+    background: map-get($colors, black-portfolio-dark);
+    color: map-get($colors, white-portfolio);
+}

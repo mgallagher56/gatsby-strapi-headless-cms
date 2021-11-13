@@ -1,0 +1,70 @@
+h1,
+h1.baseplateHeading {
+    font-size: 50px;
+    margin-bottom: map-get($spacers, 4);
+}
+
+h2,
+h2.baseplateHeading {
+    font-size: 40px;
+    margin-bottom: map-get($spacers, 3);
+}
+
+h3,
+h3.baseplateHeading {
+    font-size: 30px;
+    margin-bottom: map-get($spacers, 3);
+}
+
+h4,
+h4.baseplateHeading {
+    font-size: 24px;
+    margin-bottom: map-get($spacers, 2);
+}
+
+h5,
+h5.baseplateHeading {
+    font-size: 18px;
+    margin-bottom: map-get($spacers, 1);
+}
+
+h6,
+h6.baseplateHeading {
+    font-size: 12px;
+    margin-bottom: map-get($spacers, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+}

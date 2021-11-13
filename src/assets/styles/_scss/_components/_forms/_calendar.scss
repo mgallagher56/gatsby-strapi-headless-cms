@@ -1,0 +1,67 @@
+ul {
+    list-style-type: none;
+}
+
+.month {
+    background: #1abc9c;
+    padding: 70px 25px;
+    text-align: center;
+    width: 100%;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            color: white;
+            font-size: 20px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+    }
+
+    .prev {
+        float: left;
+        padding-top: 10px;
+    }
+
+    .next {
+        float: right;
+        padding-top: 10px;
+    }
+}
+
+.weekdays {
+    background-color: #ddd;
+    margin: 0;
+    padding: 10px 0;
+
+    li {
+        color: #666;
+        display: inline-block;
+        text-align: center;
+        width: 13.6%;
+    }
+}
+
+.days {
+    background: #eee;
+    margin: 0;
+    padding: 10px 0;
+
+    li {
+        color: #777;
+        display: inline-block;
+        font-size: 12px;
+        list-style-type: none;
+        margin-bottom: 5px;
+        text-align: center;
+        width: 13.6%;
+
+        .active {
+            background: #1abc9c;
+            color: white !important;
+            padding: 5px;
+        }
+    }
+}

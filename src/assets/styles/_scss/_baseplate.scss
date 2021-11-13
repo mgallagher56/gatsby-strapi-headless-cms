@@ -1,0 +1,23 @@
+.baseplate {
+    h1 {
+        &:not(.showcase) {
+            border-bottom: 5px solid map-get($colors, white-portfolio);
+            padding-bottom: map-get($spacers, 2);
+        }
+    }
+
+    h2,
+    h3 {
+        &:not(.showcase) {
+            border-bottom: 2px solid map-get($colors, white-portfolio);
+            padding-bottom: map-get($spacers, 2);
+        }
+    }
+
+    .buttonContainer {
+        border: 1px solid;
+    }
+    .row {
+        margin-bottom: map-get($spacers, 4);
+    }
+}

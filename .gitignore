@@ -1,4 +1,3 @@
-WordPress/GraphQL
 
 # Logs
 logs
@@ -64,7 +63,6 @@ yarn-error.log
 !.env.GATSBY_CONCURRENT_DOWNLOAD
 .DS_Store
 
-.wordpress-cache
 .env
 log
 

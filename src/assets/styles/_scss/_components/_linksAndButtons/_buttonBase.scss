@@ -1,0 +1,6 @@
+button,
+.btn {
+    background: lightblue;
+    color: black;
+    padding: map-get($spacers, 2) map-get($spacers, 3);
+}

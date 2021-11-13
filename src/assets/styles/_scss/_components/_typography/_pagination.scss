@@ -1,0 +1,45 @@
+.pagination {
+    &.numbered {
+        a {
+            color: map-get($colors, white-portfolio);
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+
+            &:hover {
+                &:not(.active) {
+                    background-color: map-get($colors, pink-portfolio-dark);
+                    color: map-get( $colors, black-portfolio-dark );
+                }
+            }
+        }
+
+        a.active {
+            background-color: map-get($colors, blue-portfolio);
+            color: map-get($colors, white-portfolio);
+        }
+    }
+
+    &.dots {
+        a {
+            margin: auto map-get($spacers, 2);
+
+            &:not(.paginationNav) {
+                border: 2px solid map_get($colors, white-portfolio);
+                border-radius: 50%;
+                height: 10px;
+                margin: map-get($spacers, 1) map-get($spacers, 2);
+                width: 10px;
+
+                &:hover {
+                    border-color: map-get($colors, pink-portfolio-dark);
+                }
+            }
+        }
+
+        a.active {
+            border-color: map-get($colors, blue-portfolio);
+        }
+    }
+}

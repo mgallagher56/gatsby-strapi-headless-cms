@@ -1,0 +1,20 @@
+{
+    "Primary" : {
+        "set" : "Button Set 1",
+        "background" : "black-portfolio",
+        "button-set" : "1",
+        "overlay" : "Light"
+    },
+    "Secondary" : {
+        "set" : "Button Set 1",
+        "background" : "black-portfolio-dark",
+        "button-set" : "1",
+        "overlay" : "Light"
+    },
+    "Tertiary" : {
+        "set" : "Button Set 2",
+        "background" : "black-portfolio-light",
+        "button-set" : "2",
+        "overlay" : "Dark"
+    }
+}

@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@100&family=Source+Code+Pro:wght@400;500&family=Source+Serif+Pro:wght@400;600&display=swap');
+
+#oldSite {
+    /*navbar*/
+    /*header*/
+    /*Portfolio*/
+  }
+
+  #oldSite * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  #oldSite a {
+    text-decoration: none;
+  }
+
+  #oldSite .headerText {
+      color: black
+  }
+  #oldSite html {
+    font-size: 14px;
+  }
+  #oldSite #oldNav {
+    width: 100%;
+    height: 120PX;
+    text-align: center;
+    overflow: visible;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    background: #1A202C;
+  }
+  #oldSite .logo {
+    font-size: 3rem;
+    font-family: Monoton, cursive;
+  }
+  #oldSite .logoSmall {
+    display: none;
+  }
+  #oldSite .menu {
+    width: 100%;
+    height: 120PX;
+    font-family: "Source Code Pro", monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: visible;
+  }
+  #oldSite #oldNav ul li a {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    transition: 0.2s linear;
+  }
+
+  #oldSite #oldNav ul li a:hover {
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 2px white solid;
+    border-top: 2px white solid;
+  }
+
+  #oldSite #oldNav ul .oldSocial a:hover {
+    border: none;
+    padding: 0;
+    color: invert(white);
+  }
+
+  #oldSite #oldNav .linkedIn img {
+      width: 50px;
+  }
+
+  #oldSite .social {
+    display: inline;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    float: right;
+  }
+
+  #oldSite .social li {
+    float: left;
+  }
+  #oldSite .social li a:hover {
+    border: none;
+    padding: 0;
+  }
+
+  #oldSite .gitHub img {
+    width: 45px;
+  }
+
+  #oldSite .linkedIn img {
+    width: 35px;
+  }
+
+  #oldSite .header {
+    margin-top: 100px;
+    height: 600px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -100;
+  }
+  #oldSite .innerHeader {
+    width: 100%;
+    height: 900px;
+    margin: 10px auto;
+    background-color: white;
+    font-family: "Source Code Pro", monospace;
+  }
+  #oldSite .innerHeader .headerText {
+    position: relative;
+    width: 35%;
+    top: 15%;
+    left: 5%;
+    text-align: center;
+    margin-right: 0;
+  }
+  #oldSite .innerHeader h1 {
+    font-size: 2.5rem;
+  }
+  #oldSite .innerHeader h3 {
+    font-size: 2rem;
+  }
+  #oldSite .screen {
+    display: none;
+  }
+  #oldSite video {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    display: inline;
+    width: 50%;
+    max-width: 800px;
+    min-width: 500px;
+  }
+  #oldSite .portfolio {
+    width: 100%;
+    margin: 1000px auto 0 auto;
+    overflow: visible;
+  }
+  #oldSite .portfolio h1 {
+    font-family: "Source Code Pro", monospace;
+    margin: 15px 0 50px 0;
+  }
+  #oldSite .portfolio .title {
+    position: relative;
+    top: 25px;
+    margin: 50px auto;
+    background-color: black;
+    color: white;
+    width: max-content;
+  }
+
+  #oldSite .portfolioBox {
+    background-image: url("./images/coming-soon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    height: 450px;
+    width: 33.3%;
+    transition: 0.6s linear;
+  }
+  #oldSite .overlay {
+    transition: 0.2s linear;
+    filter: grayscale(90%);
+    z-index: 98;
+  }
+  #oldSite .overlay:hover {
+    filter: none;
+  }
+  #oldSite .portfolioBox:hover {
+    border-top: 40px solid black;
+    border-bottom: 40px solid black;
+  }
+  #oldSite .portfolioBox h1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    filter: none;
+    text-align: center;
+  }
+  #oldSite .projectButton {
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    top: 300px;
+    color: white;
+    height: 50px;
+    width: 30%;
+    margin: 0 10%;
+    float: left;
+    border: 1px white solid;
+    font-size: 1rem;
+    filter: none;
+    transition: 0.4s linear;
+  }
+  #oldSite .projectButton:hover {
+    background-color: white;
+    color: black;
+    border: 1px black solid;
+    font-size: 1.2rem;
+  }
+  #oldSite .project1 {
+    background-image: url("./images/portfolio.png");
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    /*width: 30%;*/
+  }
+  #oldSite .project2 {
+    background-image: url("./images/collectionApp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 14%;
+    /*width: 40%;*/
+  }
+  #oldSite .project3 {
+    background-image: url("./images/pairsGame.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*width: 30%;*/
+  }
+  #oldSite .project4 {
+    background-image: url("./images/solar-system.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*width: 35%;*/
+  }
+  #oldSite .project5 {
+    background-image: url("./images/githubFetch.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*width:25%;*/
+  }
+  #oldSite .project6 {
+    background-image: url("./images/finance.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    /*width:40%;*/
+  }
+  #oldSite .project7 {
+    background-image: url("./images/GRUB.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*width: 30%;*/
+  }
+  #oldSite .project8 {
+    background-image: url("./images/ski.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #oldSite .project9 {
+    background-image: url("./images/toDoApp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+#oldSite .aboutMe {
+    text-align: center;
+    color: black;
+    background: white;
+    padding: 20px 0;
+  }
+  #oldSite .aboutMe h1 {
+    background-color: black;
+    color: white;
+    width: max-content;
+    margin: 0 auto;
+  }
+  #oldSite .profileImg {
+    background-image: url("./images/profile.jpg");
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    margin: 20px auto;
+    border-radius: 50%;
+  }
+
+
+  #oldSite .aboutMe p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: "Source Code Pro", monospace;
+    text-shadow: -1px -1px white;
+  }
+  #oldSite .footer {
+    background-color: black;
+    color: white;
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #oldSite .contact {
+    /*background-image: url("img/code.320.png");*/
+    background-repeat: repeat-x;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+  }
+  #oldSite .email {
+    background-color: white;
+    border: black solid 1px;
+    padding: 10px 20px;
+    margin: 15px 25% 0 25%;
+    transition: 0.3s linear;
+  }
+  #oldSite .email:hover {
+    padding: 15px 30px;
+    border: white solid 1px;
+    background-color: black;
+    color: white;
+  }
+  #oldSite .contact ul {
+    width: 80%;
+    height: auto;
+    overflow: auto;
+    margin: 50px auto;
+    padding-bottom: 50px;
+  }
+  #oldSite .socialImg {
+    height: 60px;
+    width: 60px;
+    margin: 0 40%;
+    transition: 0.3s linear;
+  }
+  #oldSite .linkedIn {
+    height: 50px;
+    width: 50px;
+  }
+  #oldSite .socialImg:hover {
+    border-radius: 10px;
+    color: invert(white);
+  }
+  #oldSite .contact .linkedIn:hover {
+    background: white;
+    border-radius: 10px;
+    color: invert(white);
+  }
+  #oldSite .socialFooter {
+    display: inline-block;
+    width: 33.3%;
+    float: left;
+    margin: 0 auto;
+  }
+  #oldSite .burgerMenu {
+    padding: 0;
+    display: none;
+    position: fixed;
+    margin: 0;
+    width: 130px;
+    background-color: black;
+    border-top: white 1px solid;
+    border-right: white 1px solid;
+  }
+  #oldSite .burgerItem {
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    color: white;
+    margin: 0;
+    width: 130px;
+    font-size: 20px;
+  }
+  #oldSite .burgerItem a {
+    color: white;
+  }
+  #oldSite .burgerItem a:hover {
+    padding-top: 9px;
+  }
+  #oldSite .burger {
+    height: 50px;
+    float: left;
+    margin: 20px 10px 10px 20px;
+    display: none;
+  }
+
+  /*Reponsiveness*/
+  @media screen and (max-width: 900px) {
+    #oldSite #oldNav ul li a {
+      width: 18%;
+    }
+    #oldSite #oldNav ul li a:hover {
+      padding: 7px 0;
+    }
+    #oldSite #oldNav {
+      height: 100px;
+    }
+    #oldSite .header {
+      position: fixed;
+      height: 500px;
+    }
+    #oldSite .portfolio {
+      margin: 800px auto 0 auto;
+    }
+    #oldSite .portfolioBox {
+      width: 50%;
+    }
+    #oldSite .headerText {
+      position: unset;
+      float: unset;
+    }
+
+    #oldSite .innerHeader .headerText {
+      top: 5%;
+    }
+    #oldSite video {
+      width: 50%;
+      min-width: 250px;
+      top: 325px;
+      left: unset;
+      margin: 0 25%;
+    }
+    #oldSite li img {
+      margin: 0 0 0 10px;
+    }
+    #oldSite .aboutMe {
+      background-position: 10px -10px;
+    }
+    #oldSite .aboutMe p {
+      width: 85%;
+    }
+    #oldSite .email {
+      position: relative;
+      margin: 15px 0;
+    }
+    #oldSite .contact ul {
+      width: 90%;
+      overflow: auto;
+      margin: 50px auto 0 auto;
+    }
+    #oldSite .socialImg {
+      position: relative;
+    }
+  }
+  @media screen and (max-width: 720px) {
+    #oldSite .burgerMenu {
+      display: none;
+      z-index: 100;
+      top: 75px;
+    }
+    #oldSite .burger {
+      display: inline;
+      float: left;
+      z-index: 1000;
+    }
+    #oldSite .header {
+      margin-top: 100px;
+    }
+    #oldSite #oldNav .menu {
+      display: none;
+    }
+    #oldSite #oldNav {
+      background-color: white;
+      height: 100px;
+    }
+    #oldSite .logoSmall {
+      display: block;
+      position: fixed;
+      font-size: 3rem;
+      text-align: center;
+      font-family: "Monoton", cursive;
+      z-index: 102;
+      padding: 0;
+      left: 37%;
+      margin: 10px auto;
+      width: 150px;
+    }
+    #oldSite .aboutMe {
+      background-position: 20px -130px;
+    }
+    #oldSite .aboutMe p {
+      width: 95%;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    #oldSite .burgerMenu {
+      display: none;
+    }
+  }

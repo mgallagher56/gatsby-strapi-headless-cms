@@ -1,0 +1,8 @@
+$spacer: 8px;
+$spacers : ();
+
+@for $i from 1 through 30 {
+    $map : ();
+    $map: ( $i : #{$i * $spacer});
+    $spacers : map-merge( $spacers, $map)
+}

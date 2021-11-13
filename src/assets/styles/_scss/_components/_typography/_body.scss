@@ -1,0 +1,29 @@
+body,
+p {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+
+    &.p-large {
+        font-size: 23px
+    }
+}
+
+p {
+    &:empty {
+        display: none;
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    > strong {
+        font-weight: 600;
+    }
+}
+

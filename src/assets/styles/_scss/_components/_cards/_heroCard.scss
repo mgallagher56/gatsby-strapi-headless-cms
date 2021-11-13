@@ -1,0 +1,17 @@
+.hero-card {
+    a {
+        color: map-get($colors, black-portfolio);
+        text-decoration: none;
+    }
+
+    .card-media {
+        height: 100%;
+        width: 100%;
+        max-height: 300px;
+
+        img {
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+}
